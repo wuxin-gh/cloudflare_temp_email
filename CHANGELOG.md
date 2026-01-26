@@ -6,7 +6,31 @@
   <a href="CHANGELOG_EN.md">🇺🇸 English</a>
 </p>
 
-## v1.2.0(main)
+## v1.3.0(main)
+
+### Features
+
+- feat: |OAuth2| 新增 OAuth2 邮箱格式转换功能，支持通过正则表达式转换第三方登录返回的邮箱格式（如将 `user@domain` 转换为 `user@custom.domain`）
+
+### Bug Fixes
+
+- fix: |用户地址| 修复禁止匿名创建时，已登录用户地址数量限制检查失效的问题，新增公共函数 `isAddressCountLimitReached` 统一处理地址数量限制逻辑
+
+### Improvements
+
+- refactor: |代码重构| 提取地址数量限制检查为公共函数，优化代码复用性
+
+## v1.2.1
+
+### Bug Fixes
+
+- fix: |定时任务| 修复定时任务清理报错 `e.get is not a function`，使用可选链安全访问 Context 方法
+
+### Improvements
+
+- style: |AI 提取| 暗色模式下 AI 提取信息使用更柔和的蓝色 (#A8C7FA)，减少视觉疲劳
+
+## v1.2.0
 
 ### Breaking Changes
 
